@@ -10,7 +10,7 @@ scalar = sklearn.preprocessing.MaxAbsScaler()
 
 def H_clsf(img1, img2):
 
-    size=10;
+    size=256;
     
     img1_h = cv2.calcHist([img1],[0],None,[size],[0,256])
     img2_h = cv2.calcHist([img2],[0],None,[size],[0,256])
